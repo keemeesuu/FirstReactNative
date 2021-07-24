@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import Counter from './components/Counter';
 import MyButton from './components/MyButton';
 import EventButton from './components/EventButton';
+import EventInput from './components/EventInput';
  
 const App = () => {
   return ( 
@@ -15,6 +16,7 @@ const App = () => {
     }}
     >
       <EventButton />
+      <EventInput />
     </View>
   );
 };
