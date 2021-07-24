@@ -15,9 +15,9 @@ const App = () => {
       <Text style={{ fontSize: 30, marginBottom: 0}}>
         My Button Component
       </Text>
-      <MyButton title="Button" />
-      <MyButton title="Button" >Children Props</MyButton>
-      <MyButton />
+      <MyButton title="Button" name="BtnName" onPress={() => alert('props')} />
+      <MyButton title="Button" name="BtnName" onPress={() => alert('children')} >Children Props</MyButton>
+      <MyButton onPress={() => alert('default')} />
     </View>
   );
 };
