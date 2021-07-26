@@ -14,6 +14,7 @@ const EventInput = () => {
                 placeholder="Enter a text..."
                 // onChange={_onChange}
                 onChangeText={_onChangeText}
+                
             />
         </View>
     )
