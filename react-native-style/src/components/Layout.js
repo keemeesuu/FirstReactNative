@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 
 export const Header = () => {
     return (
-        <View style={[styles.container]}>
+        <View style={[styles.container, styles.header]}>
             <Text style={styles.text}>Header</Text>
         </View>
     );
@@ -36,8 +36,9 @@ const styles = StyleSheet.create({
     },
     header: {
         backgroundColor: '#f1c40f',
-    },
+    }, 
     contents: {
+        flex: 1,
         backgroundColor: '#1abc9c',
         height: 640,
     },
