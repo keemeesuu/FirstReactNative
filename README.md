@@ -17,3 +17,5 @@
 ```
 npm install styled-components
 ```
+
+128p - 4.3.1 스타일드 컴포넌트 사용법

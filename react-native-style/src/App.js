@@ -1,16 +1,30 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { viewStyles, textStyles } from './styles';
-import { Header, Content, Footer } from './components/Layout';
+// import { viewStyles, textStyles } from './styles';
+// import { Header, Content, Footer } from './components/Layout';
+import styled from 'styled-components/native';
+import Button from './components/Button';
 
+const Container = styled.View`
+  flex: 1;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+`;
 
 const App = () => {
   return (
+    /*
       <View style={viewStyles.container}>
         <Header />
         <Content />
         <Footer />
       </View>
+    */
+    <Container>
+      <Button title="keemeesuu" />
+      <Button title="React Native" />
+    </Container>
   );
 };
 
