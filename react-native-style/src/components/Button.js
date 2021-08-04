@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-const ButtonContainer = styled.TouchableOpacity`
-    background-color: #9b49b6;
+const ButtonContainer = styled.Pressable`
+    background-color: ${props =>
+        props.title === 'keemeesuu' ? props.theme.blue : props.theme.purple};
     border-radius: 15px;
     padding: 15px 40px;
     margin: 10px 0px;
