@@ -1,20 +1,24 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Text, View, Switch } from 'react-native';
 // import { viewStyles, textStyles } from './styles';
 // import { Header, Content, Footer } from './components/Layout';
 import styled, { ThemeProvider } from 'styled-components/native';
 import Button from './components/Button';
 import Input from './components/Input';
-import { theme } from './theme';
+import { lightTheme, darkTheme } from './theme';
 
 const Container = styled.View`
   flex: 1;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.background};
   align-items: center;
   justify-content: center;
 `;
 
 const App = () => {
+  // const [값변수, 값변경함수] = useState(기본값);
+  const [isDark, setIsDark] = useState(false);
+  const _toggleSwitch = () => setIsDark(!isDark);
+
   return (
     /*
       <View style={viewStyles.container}>
@@ -23,8 +27,9 @@ const App = () => {
         <Footer />
       </View>
     */
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={isDark ? darkTheme: lightTheme}>
       <Container>
+        <Switch value={isDark} onValueChange={_toggleSwitch} />
         <Button title="keemeesuu" />
         <Button title="React Native" />
         <Input borderColor="#3498db" />
