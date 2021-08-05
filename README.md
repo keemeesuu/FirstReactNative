@@ -19,3 +19,9 @@ npm install styled-components
 ```
 
 128p - 4.3.1 스타일드 컴포넌트 사용법
+
+<br>
+
+## 그 외
+
+구글 머터리얼 디자인 아이콘 : https://material.io/resources/icons/?style=baseline
