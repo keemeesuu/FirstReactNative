@@ -30,6 +30,8 @@ npm install styled-components
 
 ## 기록 끄적끄적
 
+
+### ES6
  
 ```javascript
 //ES5
