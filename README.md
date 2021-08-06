@@ -25,3 +25,34 @@ npm install styled-components
 ## 그 외
 
 구글 머터리얼 디자인 아이콘 : https://material.io/resources/icons/?style=baseline
+
+<br>
+
+## 끄적끄적
+
+ 
+```
+//es5
+export default function App() {
+
+}
+
+//es6
+const App = () => {
+
+}
+
+export default App;
+```
+
+```
+//es5
+map(item => (
+    <Task text={item.text} />
+))
+
+//es6
+map(function item(){
+    return <Task text={item.text} />
+})
+```
