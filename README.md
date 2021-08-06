@@ -28,7 +28,7 @@ npm install styled-components
 
 <br>
 
-## 끄적끄적
+## 기록 끄적끄적
 
  
 ```javascript
