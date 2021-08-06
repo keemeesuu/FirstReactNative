@@ -32,11 +32,11 @@ npm install styled-components
 
  
 ```javascript
-//es5
+//ES5
 export default function App() {
 }
 
-//es6
+//ES6
 const App = () => {
 }
 
@@ -44,12 +44,12 @@ export default App;
 ```
 
 ```javascript
-//es5
+//ES5
 map(item => (
     <Task text={item.text} />
 ))
 
-//es6
+//ES6
 map(function (item){
     return <Task text={item.text} />
 })
