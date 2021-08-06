@@ -20,7 +20,7 @@ const IconButton = ({ type, onPressOut}) => {
     )
 }
 
-IconButton.PropTypes = {
+IconButton.propTypes = {
     type: PropTypes.oneOf(Object.values(images)).isRequired,
     onPressOut: PropTypes.func,
 }
