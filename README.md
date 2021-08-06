@@ -31,7 +31,7 @@ npm install styled-components
 ## 끄적끄적
 
  
-```
+```javascript
 //es5
 export default function App() {
 
@@ -45,7 +45,7 @@ const App = () => {
 export default App;
 ```
 
-```
+```javascript
 //es5
 map(item => (
     <Task text={item.text} />
