@@ -53,6 +53,6 @@ map(function (item){
 
 //ES6
 map(item => (
-    <Task text={item.text} />
+    return <Task text={item.text} />
 ))
 ```
