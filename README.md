@@ -45,12 +45,12 @@ export default App;
 
 ```javascript
 //ES5
-map(item => (
-    <Task text={item.text} />
-))
-
-//ES6
 map(function (item){
     return <Task text={item.text} />
 })
+
+//ES6
+map(item => (
+    <Task text={item.text} />
+))
 ```
