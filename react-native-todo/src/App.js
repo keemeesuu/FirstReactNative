@@ -28,6 +28,10 @@ const List = styled.ScrollView`
 export default function App() {
     const width = Dimensions.get('window').width;
 
+    const _handleTextChange = text => {
+        setNewTask(text);  
+    };
+
     const [newTask, setNewTask] = useState('');
     const [tasks, setTasks] = useState({
         '1': { id: '1', text: 'keemeesuu', completed: false },
@@ -58,9 +62,15 @@ export default function App() {
         setTasks(currentTasks);
     }
 
-    const _handleTextChange = text => {
-      setNewTask(text);  
-    };
+    const _updateTask = item => {
+        const currentTasks = Object.assign({}, tasks);
+        currentTasks[item.id] = item;
+        setTasks(currentTasks);
+    }
+
+    const _onBlur = () => {
+        setNewTask('');
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -75,6 +85,7 @@ export default function App() {
                     value={newTask}
                     onChangeText={_handleTextChange}
                     onSubmitEditing={_addTask}
+                    onBlur={_onBlur}
                 />
                 <List width={ width }>
                     {/* 
@@ -91,6 +102,7 @@ export default function App() {
                                 item={item} 
                                 deleteTask={_deleteTask}
                                 toggleTask={_toggleTask}
+                                updateTask={_updateTask}
                             />
                         ))}
                 </List>
