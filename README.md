@@ -34,12 +34,10 @@ npm install styled-components
 ```javascript
 //es5
 export default function App() {
-
 }
 
 //es6
 const App = () => {
-
 }
 
 export default App;
