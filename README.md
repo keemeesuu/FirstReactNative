@@ -52,7 +52,7 @@ map(item => (
 ))
 
 //es6
-map(function item(){
+map(function (item){
     return <Task text={item.text} />
 })
 ```
