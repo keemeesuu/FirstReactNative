@@ -105,7 +105,7 @@ export default function App() {
                                 updateTask={_updateTask}
                             />
                         ))}
-                </List>
+                </List> 
    
             </Container>
         </ThemeProvider>

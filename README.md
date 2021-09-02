@@ -12,13 +12,19 @@
 
 `styled-components` : 스타일드 컴포넌트는 자바스크립트 파일 안에 스타일을 작성하는 CSS-in-JS 라이브러리이며, 스타일이 적용된 컴포넌트라고 생각하면 이해하기 쉽습니다.
 
-스타일드 컴포넌트 : https://styled-components.com/
+https://styled-components.com/
 
 ```
 npm install styled-components
 ```
 
 128p - 4.3.1 스타일드 컴포넌트 사용법
+
+<br>
+
+`async-storage` : 로컬에 데이터를 저장하고 불러오는 기능을 구현. 비동기로 동작하며 문자열로 된 키-값(key-value) 형태의 데이터를 기기에 저장하고 불러올 수 있는 기능을 제공합니다.
+
+https://github.com/react-native-community/async-storage
 
 <br>
 

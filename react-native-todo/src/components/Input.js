@@ -20,19 +20,19 @@ const Input = ({ placeholder, value, onChangeText, onSubmitEditing, onBlur }) =>
     const width = Dimensions.get('window').width;
 
     return (
-            <StyledInput 
-                width={width} 
-                placeholder={placeholder} 
-                maxLength={50}
-                autoCapitalize="none"
-                autoCorrect={false}
-                returnKeyType="done"
-                keyboardAppearance="dark"
-                value={value}
-                onChangeText={onChangeText}
-                onSubmitEditing={onSubmitEditing}
-                onBlur={onBlur}
-            />
+        <StyledInput 
+            width={width} 
+            placeholder={placeholder} 
+            maxLength={50}
+            autoCapitalize="none"
+            autoCorrect={false}
+            returnKeyType="done"
+            keyboardAppearance="dark"
+            value={value}
+            onChangeText={onChangeText}
+            onSubmitEditing={onSubmitEditing}
+            onBlur={onBlur}
+        />
     );
 };
 
@@ -41,7 +41,7 @@ Input.propTypes = {
     value: PropTypes.string.isRequired,
     onChangeText: PropTypes.func.isRequired,
     onSubmitEditing: PropTypes.func.isRequired,
-    onBlur: PropTypes.func.onBlur,
+    onBlur: PropTypes.func.isRequired,
 };
 
 export default Input;
