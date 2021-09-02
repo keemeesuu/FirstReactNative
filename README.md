@@ -26,6 +26,10 @@ npm install styled-components
 
 https://github.com/react-native-community/async-storage
 
+```
+expo install @react-native-community/async-storage
+```
+
 <br>
 
 ## 그 외
